@@ -1,1 +1,18 @@
-<div> Search Hacker News </div>
+<div> 
+  <form class="form-inline">
+  <div class="form-group">
+    <input type="search"
+           class="form-control"
+           placeholder="Enter search string"
+           #search>
+
+  <button class="search-button"
+          (click)="fetchSearchResults(search.value)">
+          Search
+  </button>
+    </div>
+</form> 
+</div>
+
+<div class = "searchResults">
+</div>
